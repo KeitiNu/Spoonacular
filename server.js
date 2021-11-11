@@ -3,10 +3,11 @@ const express = require('express');
 const axios = require('axios');
 const ejs = require('ejs');
 // const { response } = require('express');
-
 const app = express();
 
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
+
 
 
 app.get('/', (req, res) => {
@@ -24,7 +25,6 @@ app.get('/', (req, res) => {
 
 
             }
-            console.log(response.data.recipes[0].extendedIngredients);
             res.render('index', { dataFromSpoonacular: recipe });
 
         })

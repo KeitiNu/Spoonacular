@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+}
+.img, .ingredients{
+margin: auto;
+}
+
+body{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+    size: 5rem;
+    padding: 1rem;
+    color: rgb(49, 49, 105);
+}
+h3{
+    color: rgb(49, 49, 105);
+
+}
